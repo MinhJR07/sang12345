@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recharge Coins</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <img src="1.png" alt="TikTok Logo" class="logo">
+      <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm">
+        <i class="fas fa-search"></i> <!-- Thêm biểu tượng kính lúp -->
+      </div>
+      <div class="header-right">
+        <button class="upload-btn">+ Tải lên</button>
+        <div class="icons">
+          <span>🔔</span>
+          <span>💬</span>
+        </div>
+        <div><img src="2.png" alt="User Avatar" class="avatar"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="main-container">
+    <div class="mainer-container">
+      <h2>Nhận tiền xu</h2>
+      <h4>Xem lịch sử giao dịch</h4>
+    </div>
+   <!-- User Info -->
+<div class="user-info">
+  <div class="user-info-left">
+    <img src="2.png" alt="User Avatar" class="avatar">
+    <div class="user-info-text"style="border-right: 1px solid #e0e0e0; padding-right: 15px ;">
+      <p>sang123</p>
+      <p><img src="2.png" alt="Logo" class="coin-logo"> 0</p> 
+    </div>
+    <div class="user-info-right">
+      <a href="#">Đổi lấy tiền xu</a>
+      <p>Số dư quà tặng trực tiếp: 0.05 đô la (4)<img src="2.png" alt="Logo" class="coin-logo2"></p>
+    </div>
+  </div>
+</div>
+
+    <!-- Recharge Options -->
+    <div class="recharge-section">
+      <p class="discount-note">
+        Nạp tiền: <span class="highlight">Tiết kiệm khoảng 25% với mức phí dịch vụ của bên thứ ba thấp hơn.</span>
+      </p>
+      <div class="recharge-options">
+        <div class="option selected">
+          <b><img src="2.png" alt="Logo" class="coin-logo3">50</b>
+          <span>đ 15.100</span>
+        </div>
+        <div class="option">
+          <b><img src="2.png" alt="Logo" class="coin-logo3">350</b>
+          <span>đ 105.300</span>
+        </div>
+        <div class="option">
+          <b><img src="2.png" alt="Logo" class="coin-logo3">700</b>
+          <span>đ 210.600 </span>
+        </div>
+        <div class="option">
+          <b><img src="2.png" alt="Logo" class="coin-logo3">1,400</b>
+          <span>đ 421.200</span>
+        </div>
+        <div class="option">
+          <b><img src="2.png" alt="Logo" class="coin-logo3">3,500</b>
+          <span>đ 1.052.800</span>
+        </div>
+        <div class="option">
+          <b><img src="2.png" alt="Logo" class="coin-logo3">7,000</b>
+          <span>đ 2.105.600</span>
+        </div>
+        <div class="option">
+          <b><img src="2.png" alt="Logo" class="coin-logo3">17,500</b>
+          <span>đ 5.263.800 </span>
+        </div>
+        <div class="option">
+          <b><img src="2.png" alt="Logo" class="coin-logo3">Phong tục</b>
+          <p>Số lượng lớn được hỗ trợ</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Info -->
+    <div class="payment-info">
+      <p>Phương thức thanh toán <img src="5.png" alt="Payment Options" class="payment"><img src="6.png" alt="Payment Options" class="payment"><img src="9.png" alt="Payment Options" class="payment"><img src="8.png" alt="Payment Options" class="payment"> <img src="7.png" alt="Payment Options" class="payment"> <img src="3.png" alt="Payment Options" class="payment"> <img src="4.png" alt="Payment Options" class="payment"> </p>
+      <p class="total">Tổng cộng <span id="total-amount">15,100 đ</span></p>
+      <button id="openModal">Nạp tiền</button>
+      <!-- Modal tóm tắt đơn hàng -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2>Tóm tắt đơn hàng</h2>
+          <hr class="divider">
+          <div class="scrollable-content">
+            <div class="summary-info">
+              <p><strong>Tài khoản:</strong> sang123</p>
+              <hr class="divider">
+              <p><strong>Tổng cộng:</strong> ₫0</p> <!-- Sẽ cập nhật từ JS -->
+            </div>
+            <div class="payment-methods">
+              <hr class="divider">
+              <h3>Phương thức thanh toán</h3>
+              <form>
+                <label>
+                  <input type="radio" name="payment" value="momo">
+                  MoMo
+                </label>
+                <label>
+                  <input type="radio" name="payment" value="zalopay">
+                  ZaloPay
+                </label>
+                <label>
+                  <input type="radio" name="payment" value="credit-card">
+                  Thẻ tín dụng/Thẻ ghi nợ
+                </label>
+              </form>
+            </div>
+          </div>
+          <div>
+            <button id="confirmPayment">Thanh toán ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="javascipt.js"></script>
+</body>
+</html>
